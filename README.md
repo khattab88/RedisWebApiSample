@@ -1,6 +1,6 @@
 # RedisWebApiSample
 
-Implement distributed caching using redis on .NET Web API (.net 6)
+Implement distributed caching using redis on .NET Web API (.net 7)
 
 ## steps:
 1. run redis `server docker run -d --name redis-server -p 6379:6379 redis`
