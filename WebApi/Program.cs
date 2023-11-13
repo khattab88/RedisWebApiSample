@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebApi.Data;
+using WebApi.Services;
 
 namespace WebApi
 {
@@ -20,6 +21,9 @@ namespace WebApi
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
+
+            builder.Services.AddScoped<ICacheService, CacheService>();
+
 
             var app = builder.Build();
 
